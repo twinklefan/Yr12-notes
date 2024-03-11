@@ -1,6 +1,7 @@
 
 a, a:hover, a:active {
     text-decoration: none;
+    /* color: var(--accent); */
 }
 
 button {
@@ -29,4 +30,9 @@ button:hover {
 #special {
     padding: 20px 70px;
     margin: 40px;
+}
+
+#s {
+    color: var(--accent);
+    cursor:text;
 }
