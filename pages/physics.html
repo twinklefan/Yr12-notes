@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="phy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tab name -->
+    <title>Physics</title>
+    <!-- tab icon -->
+    <link rel="icon" type="../img/favicon.png" href="../img/favicon.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/btn.css">
+    <link rel="stylesheet" href="../styles/cursor.css">
+    <link rel="stylesheet" href="../styles/content.css">
+</head>
+<body>
+    
+    <a class="back" href="index.html"><button class="back">Back</button></a>
+
+    <div>
+        <h2>Physics</h2>
+    </div>
+    
+    <div>
+        <ul>
+            <!-- <h3>Credits</h3>
+            <img class="pdfs" src="../img/phy/credits.jpg" alt=""> -->
+
+            <h3>Scalars & Vectors</h3>
+            <li>Vectors are quantities with size and direction</li>
+            <li>Scalars only have size</li>
+            <!-- insert image -->
+            
+            <h3>Speed/Velocity</h3>
+            <li>Speed discribes how quickly an object's position changes</li>
+            <li>Unit: meters per second or m/s or ms⁻¹</li>
+            <li>v = d/t</li>
+            <img src="../img/phy/speed.png" alt="Ex. How long does it take for a car moving at 10m/s to travel 25m">
+
+            <h3>Acceleration</h3>
+            <li>Acceleration discribes how quickly an object's speed changes</li>
+            <li>Unit: meters per second, per second or m/s/s or ms⁻²</li>
+            <li>When an object accelerates against its velocity, we say it decelerates</li>
+            <li>a = v/t</li>
+            <img src="../img/phy/acceleration.png" alt="A car accelerates from rest at 5m/s/s for 7 seconds. Calculate it's new speed">
+
+            <h3>Graphs</h3>
+            <li><b>Distance-time graph</b></li>
+            <li>The slope of a ditance-time graph is the velocity</li>
+            <li>The steeper the slope, the higher the velocity</li>
+            <div class="flex">
+                <img style="max-height: 40vh;" src="../img/phy/distance-time_graph_1.png" alt="">
+                <img style="max-height: 40vh;" src="../img/phy/distance-time_graph_2.png" alt="">
+            </div>
+            <li><b>Speed-time graph</b></li>
+            <li>The slope of a speed-time graph is the acceleration</li>
+            <li>The area is the distance</li>
+            <li>The steeper the slope, the higher the acceleration</li>
+            <div class="flex">
+                <img style="max-height: 40vh;" src="../img/phy/speed-time_graph_1.png" alt="">
+                <img style="max-height: 40vh;" src="../img/phy/speed-time_graph_2.png" alt="">
+            </div>
+
+            <h3>Kinematic equations</h3>
+            <li>Kinematic equations are used to discribe objects with constant acceleration (including 0!)</li>
+            <li>They contain a mix of these values:</li>
+            <img src="../img/phy/values_1.png" alt="initial velocity (vi), final velocity (vf), distance (d), acceleration (a) & time (t)">
+            <li>v = vi + at (missing d)</li>
+            <li>d = vit + at² (missing vf)</li>
+            <li>vf² = vi² + 2ad (missing t)</li>
+            <li>d = 0.5(vf + vi)t (missing a)</li>
+
+            <h3>Scaling vectors</h3>
+            <li>Vectors have 2 properties...</li>
+            <li>Magnitude indicated by length</li>
+            <img src="../img/phy/vectors_magnitude.png" alt="">
+            <li>Direction indicated by orientation</li>
+            <img src="../img/phy/vectors_direction.png" alt="">
+            <li>To scale a vector (affect its size), we multiply it by a scalar</li>
+            <img src="../img/phy/scaling_vectors_1.png" alt="">
+            <li>Multipling a vector by a negative number causes it to point in the opposite direction</li>
+            <img src="../img/phy/scaling_vectors_2.png" alt="">
+
+            <h3>Equating vectors</h3>
+            <li>Similar to scalars, vectors form equations. To do this we can use these techniques</li>
+            <li>Loops/circles are 0, Vectors forming a closed path are equal to 0</li>
+            <img src="../img/phy/vectors_equating.png" alt="">
+            <li>Equivalent paths: Vectors or sets of vectors that start and finish in the same place are equal</li>
+            <img src="../img/phy/vectors_equivalent.png" alt="">
+
+            <h3>Trigonometry</h3>
+            <div class="flex">
+                <img src="../img/phy/trig_1.png" alt="">
+                <img src="../img/phy/trig_2.png" alt="">
+                <img src="../img/phy/trig_3.png" alt="">
+            </div>
+
+            <h3>Vector components</h3>
+            <li>It is often useful to separate a vector into horizontal and vertical components</li>
+            <li>Knowing the total magnitude and the angle we can use SohCahToa</li>
+            <img style="max-height: 45vh;" src="../img/phy/vector_components.png" alt="">
+
+            <h3>Relative velocity</h3>
+            <li>Velocity is always relative to something. No velocity is truer than another</li>
+            <li>The relative velocity between two objects depends on whether they're in the same direction or opposing</li>
+            <li>Same direction velocities subtract</li>
+            <img src="../img/phy/relative_velocity_subtract.png" alt="">
+            <li>Opposing velocities add</li>
+            <img style="max-height: 21.1vh" src="../img/phy/relative_velocity_add.png" alt="">
+
+            <h3>Gravity</h3>
+            <li>Earth's gravity accelerates all objects downward at 9.8ms⁻²</li>
+            <img src="../img/phy/gravity_1.png" alt="">
+            <li>This means an object's velocity would increase by 9.8ms⁻¹ per second</li>
+            <li>This is independent of the object's mass</li>
+            <li>If an object experiences air resistance however, it's total acceleration will depend on it's mass</li>
+            <img src="../img/phy/gravity_2.png" alt="">
+
+            <h3>Projectile motion</h3>
+            <li>An object in projectile motion has both horizontal and vertical motion</li>
+            <li>For simplicity we assume, there is no air resistance, the only force acting in flight is gravity and gravity is uniform and downward</li> 
+            <img style="max-height: 35vh;" src="../img/phy/projectile.png" alt="">
+
+            <h3>Force</h3>
+            <li>A force is an influence that acts to accelerate objects, measured in Newtons (N)</li>
+            <li>Newtons 1st law: An object at rest will only change its motion (Velocity), if a force acts upon it</li>
+            <li>Newton's 2nd law: When a force acts upon an object, it will accelerate proportional to its mass</li>
+            <img style="max-height: 20vh;" src="../img/phy/force.png" alt="">
+            <li>Newton's 3rd law: Forces exist in equal and opposite pairs</li>
+
+            <h3>Hooke's law</h3>
+            <li>We can describe the force producted when a material is deformed as...</li>
+            <img style="max-height: 25vh;" src="../img/phy/hookes_law_equation.png" alt="">
+            <li>Stiffness describes the Newtons of force a material exerts, for every metre of displacement</li>
+            <img style="max-height: 45vh;" src="../img/phy/hookes_law_graph.png" alt="">
+            <li>The slope of the graph is the stiffness (k)</li>
+            <li>Following elastic deformation the material returns to its original shape</li>
+            <li>Following plastic deformation the material is permanently defomed</li>
+
+            <h3>Circular motion</h3>
+            <li>Objects in circular motion are described using the following terms...</li>
+            <img style="max-height: 30vh;" src="../img/phy/circular_motion.png" alt="">
+            <li>Radius (r): half circle width</li>
+            <li>Diameter (2r): circle width</li>
+            <li>Circumference (2πr): length of one lap/perimeter of circle</li>
+            <li>Revolution: complete one lap</li>
+            <li>Period (T): seconds per revolution</li>
+            <li>Frequency (f): revolutions per second</li>
+
+            <h3>Centripetal acceleration</h3>
+            <li>As an object changes direction its velocity changes (even if the size of the velocity does not!)</li>
+            <li>This is called the centripetal acceleration</li>
+            <li>A force or combination of forces providing centripetal acceleration are called centripetal forces</li>
+            <li>Centripetal acceleration points to the center</li>
+            <li>Velocity points tangential</li>
+            <img style="max-height: 25vh;" src="../img/phy/centripetal_force_diagram.png" alt="">
+            <img style="max-height: 25vh;" src="../img/phy/centripetal_force_equation.png" alt="">
+
+            <h3>Torque</h3>
+            <li>A force is an influence that acts to accelerate an object</li>
+            <li>A torque is an influence that acts to angularly accelerate an object</li>
+            <li>It has units of Newton metres (Nm)</li>
+            <img src="../img/phy/torque_diagram.png" alt="">
+            <img src="../img/phy/torque_equation.png" alt="">
+
+            <h3>Equilibrium</h3>
+            <li>Objects in mechanical equilibrium experience no change in their motion (linear or rotational)</li>
+            <li>For this to occur the net force and net torque must equal zero</li>
+            <img style="max-height: 10vh;" src="../img/phy/equilibrium_1.png" alt="">
+            <li>Note that an object in equilibrium doesn't need to be at rest</li>
+            <img src="../img/phy/equilibrium_diagram.png" alt="">
+            <li>For systems with multiple pivots, any pivot can be chosen for analysis</li>
+            <li>Because torques at r=0 are zero, they will be zero out of equations</li>
+
+            <h3>Centre of mass</h3>
+            <li>Centre of mass describes the average position of a set of objects, weighted by their masses</li>
+            <li>Two objects on a pivot will balance at their centre of mass</li>
+            <div class="flex">
+                <img style="max-height: 30vh;" src="../img/phy/centre_of_mass_diagram.png" alt="">
+                <img style="max-height: 30vh;" src="../img/phy/centre_of_mass_diagram_2.png" alt="">
+            </div>
+
+            <h3>Energy</h3>
+            <li>Energy describes the potential for an object to change its motion</li>
+            <li>The unit is Joules (J)</li>
+            <li>Energu comes in many forms, we will consider the following...</li>
+            <div class="flex">
+                <img style="max-height: 32vh;" src="../img/phy/energy_diagram_1.png" alt="">
+                <img style="max-height: 32vh;" src="../img/phy/energy_diagram_2.png" alt="">
+                <img style="max-height: 32vh;" src="../img/phy/energy_diagram_3.png" alt="">
+            </div>
+
+            <h3>Conservation of energy</h3>
+            <li>Energy is never created or destroyed, only transferred into different forms</li>
+            <li>This idea is called conservation of energy</li>
+            <img src="../img/phy/energy_trans_1.png" alt="">
+            <img src="../img/phy/energy_trans_2.png" alt="">
+            <img src="../img/phy/energy_trans_3.png" alt="">
+
+            <h3>Work</h3>
+            <li>When energy has been used, we say that work has been performed</li>
+            <li>Work is essentially another term for energy, it has the same unit, Joules (J)</li>
+            <li>When a force is preformed over a distance the work preformed is</li>
+            <img src="../img/phy/work_equation.png" alt="">
+            <img src="../img/phy/work_diagram.png" alt="">
+
+            <h3>Power</h3>
+            <li>Power is the rate of energy consumption</li>
+            <li>It is measured in Joules per second, which are commonly called Watts (W)</li>
+            <div class="flex">
+                <img src="../img/phy/power_equation.png" alt="">
+                <img src="../img/phy/power_example_1.png" alt="">
+                <img src="../img/phy/power_example_2.png" alt="">
+            </div>
+
+            <h3>Momentum</h3>
+            <li>Momentum is a measurement of motion that takes into account both mass and velocity</li>
+            <li>It has a unit of kgms⁻¹</li>
+            <img style="max-height: 15vh;" src="../img/phy/momentum_equation.png" alt="">
+            <li>A bee and a car might travel at the same velocity, but have very different momentums due to their considerable mass difference</li>
+            <div class="flex">
+                <img src="../img/phy/momentum_bee.png" alt="">
+                <img src="../img/phy/momentum_car.png" alt="">
+            </div>
+
+            <h3>Impulse</h3>
+            <li>The longer a collision takes, the smaller the force</li>
+            <li>We call this impulse</li>
+            <img src="../img/phy/impulse_equation.png" alt="">
+            <div class="flex">
+                <img style="max-height: 30vh;" src="../img/phy/impulse_graph_small_force.png" alt="">
+                <img style="max-height: 30vh;" src="../img/phy/impulse_graph_large_force.png" alt="">
+            </div>
+
+            <h3>Conservation of momentum</h3>
+            <li>The total momentum of a set of objects will only change if an external force acts upon them</li>
+            <li>This is called conservation of momentum</li>
+            <div class="flex">
+                <img style="max-height: 30vh;" src="../img/phy/momentum_conserve_1.png" alt="">
+                <img style="max-height: 30vh;" src="../img/phy/momentum_conserve_2.png" alt="">
+            </div>
+
+            <h3>What is an external force?</h3>
+            <li>Consider a falling apple...</li>
+            <img src="../img/phy/external_force_apple_diagram.png" alt="">
+            <li>As it falls, it's momentum increases. We could say that momentum isn't conserved because gravity is an external force</li>
+            <li>An external force is a force applied by an object whose momentum we've ignored. Often because it's impractical or impossible to measure</li>
+            <li>In the case of the apple, we've ignored the equal and opposite momentum the apple's gravity has imparted to the earth!</li>
+            <img src="../img/phy/external_force_earth_diagram.png" alt="">
+            <li>Momentum appears to not be conserved only when part of a system is ignored</li>
+
+        </ul>
+    </div>
+         
+</body>
+</html>

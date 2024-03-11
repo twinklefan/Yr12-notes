@@ -1,0 +1,32 @@
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+button {
+    color: var(--accent);
+    font-family: var(--secondary);
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: var(--dark);
+    filter: none;
+    border-radius: 16px;
+    border: 1px solid var(--accent);
+}
+
+button:hover {
+    filter: drop-shadow(3mm 3mm 4mm var(--accent));
+    animation: hover 0.4s;
+}
+@keyframes hover {
+    0% { filter: drop-shadow(0mm 0mm 0mm var(--accent));}
+    100% { filter: drop-shadow(3mm 3mm 4mm var(--accent));}
+}
+
+#special {
+    padding: 20px 70px;
+    margin: 40px;
+}

@@ -1,0 +1,40 @@
+:root {
+    /* colours */
+    --dark:  #232831;
+    --middle: #393E46;
+    --accent: #00ADB5;
+
+    /* fonts */
+    --main: 'Coiny';
+    --secondary: 'Patrick Hand';
+}
+html {
+    scrollbar-color: var(--accent) var(--dark);
+}
+body {
+    padding: 20px;
+    background-color: var(--middle);
+}
+
+h1 {
+    font-family: var(--main);
+    font-size: 9rem;
+    margin-bottom: 2vw;
+    text-align: center;
+    color: var(--accent);
+}
+
+h2 {
+    font-family: var(--main);
+    font-size: 6rem;
+    text-align: center;
+    color: var(--accent);
+    margin-top: -17vh;
+    margin-bottom: 10px;
+}
+
+
+::selection {
+    background-color: var(--accent);
+    color: var(--dark);
+}
