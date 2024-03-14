@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="dig">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tab text -->
+    <title>Databases</title>
+    <!-- tab icon -->
+    <link rel="icon" type="../img/favicon.png" href="../img/favicon.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/btn.css">
+    <link rel="stylesheet" href="../styles/cursor.css">
+    <link rel="stylesheet" href="../styles/content.css"><link rel="icon" type="../img/favicon.png" href="../img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Schoolbell" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/btn.css">
+    <link rel="stylesheet" href="../styles/cursor.css">
+    <link rel="stylesheet" href="../styles/content.css">
+</head>
+<body>
+    
+    <a class="back" href="../index.html"><button class="back">Back</button></a>
+
+    <div>
+        <h2>Databases</h2>
+    </div>
+    
+    <ul>
+        <h3>Examples - Basics</h3>
+        <li>
+            SELECT surname, first_name <br>
+            FROM people <br>
+        </li>
+        <li>
+            SELECT first_name, surname <br>
+            FROM people <br>
+            WHERE DOB = 1991; <br>
+        </li>
+        <li>
+            SELECT first_name <br>
+            FROM people <br>
+            WHERE first_name > 'a%'; (starts with a) <br>
+        </li>
+        <li>
+            SELECT * <br>
+            FROM people <br>
+            WHERE origin = 'France' <br>
+                OR origin = 'Germany'; <br>
+        </li>
+        <li>
+            SELECT first_name, last_name <br>
+            FROM people <br>
+            WHERE age > 21 <br>
+            AND (origin = 'France' <br>
+                OR origin = 'Germany'); 
+        </li>
+        <li>
+            SELECT first_name, origin <br>
+            FROM people <br>
+            WHERE DOB < 2000 <br>
+            AND origin = 'Australia' <br>
+            ORDER BY last_name DESC; (orders it in descending order) <br>
+        </li>
+        <li>
+            SELECT first_name, last_name, DOB <br>
+            FROM people <br>
+            ORDER BY DOB; <br>
+        </li>
+        <li>
+            SELECT country, gold, bronze, silver <br>
+            FROM countryMedal <br>
+            WHERE gold > 0 <br>
+            ORDER BY gold DESC, bronze DESC, silver DESC, country DESC; <br>
+        </li>
+
+        <h3>Examples - Joins</h3>
+        <li>
+            SELECT title, name <br>
+            FROM author <br>
+            JOIN book <br>
+            ON author.id = book.author_id <br>
+        </li>
+        <li>
+            SELECT title, rating <br>
+            FROM author <br>
+            INNER JOIN book <br>
+                ON author.id = book.author_id <br>
+            WHERE author.death_year IS NULL <br>
+        </li>
+        <li>
+            SELECT author.name, book.title, book.publish_year <br>
+            FROM author <br>
+            JOIN book <br>
+            ON author.id = book.author_id <br>
+            WHERE book.publish_year > 2005; <br>
+        </li>
+        <li>
+            SELECT book.title AS book_title, adaptation.title AS adaptation_title, adaptation.release_year,book.publish_year <br>
+            FROM book <br>
+            JOIN adaptation <br>
+            ON book.id = adaptation.book_id <br>
+            WHERE book.rating < adaptation.rating <br>
+                AND (adaptation.release_year - book.publish_year) < 5; <br>
+
+        </li>
+    </ul>
+         
+</body>
+</html>

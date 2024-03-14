@@ -42,3 +42,7 @@ li > a {
     text-decoration: underline;
     color: var(--accent);
 }
+
+#white > img {
+    height: 55vh;
+}
