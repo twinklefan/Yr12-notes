@@ -36,3 +36,13 @@ button:hover {
     color: var(--accent);
     cursor:text;
 }
+
+.quizBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#btnNext {
+    visibility: hidden;
+}

@@ -31,3 +31,14 @@ img {
 .pdfs {
     height: 70vh !important;
 }
+
+#score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+li > a {
+    text-decoration: underline;
+    color: var(--accent);
+}
